@@ -3,7 +3,6 @@ package com.example.mvc.form;
 import java.time.LocalDate;
 import java.util.List;
 
-import com.example.mvc.entity.ScholarshipApplication;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.GeneratedValue;
@@ -33,7 +32,6 @@ public class StudentBasicInfo {
 
 	
 
-	@OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
-	private List<ScholarshipApplication> appliactions;
+	
 
 }
