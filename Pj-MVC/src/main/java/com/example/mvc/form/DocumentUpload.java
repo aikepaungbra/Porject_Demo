@@ -2,6 +2,11 @@ package com.example.mvc.form;
 
 import java.time.LocalDate;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class DocumentUpload {
 	
 	private String scholarshipEssay;
