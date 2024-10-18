@@ -1,12 +1,11 @@
 package com.example.mvc.form;
 
-import com.example.mvc.form.usedEntity.StudentBasicInfo;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -14,8 +13,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@Entity
-@Table(name = "address")
+@MappedSuperclass
 public class Address {
 
 	@Id
@@ -32,8 +30,5 @@ public class Address {
     private int postalCode;
     
     
-    @OneToOne
-    @JoinColumn(name = "student_id",nullable = false)
-    private StudentBasicInfo basicInfo;
     
 }
