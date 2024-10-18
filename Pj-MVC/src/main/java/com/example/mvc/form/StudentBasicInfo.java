@@ -21,10 +21,13 @@ import lombok.NoArgsConstructor;
 public class StudentBasicInfo {
 
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String student_id;
+	
 	private String student_name;
 	private LocalDate student_dateOfBirth;
 	private int student_age;
-	private String student_id;
 	private String student_year;
 	private String student_major;
 	private String schoolOf;

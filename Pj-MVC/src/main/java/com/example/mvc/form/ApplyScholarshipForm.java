@@ -19,38 +19,49 @@ public class ApplyScholarshipForm {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 	
-	@Embedded
-	private StudentBasicInfo basicInfo;
 	
-	@Embedded
-	private PermanentAddress permanentAddress;
 	
-	@Embedded
-	private CurrentAddress currentAddress;
 	
-	@Embedded
-	private ScholarshipHistory scholarshipHistory;
 	
-	@Embedded
-	private FamilyStatus familyStatus;
 	
-	@Embedded
-	private FatherInfo fatherInfo;
 	
-	@Embedded
-	private MotherInfo motherInfo;
 	
-	@Embedded
-	private GuardianInfo guardianInfo;
 	
-	@Embedded
-	private SiblingInfo siblingInfo;
 	
-	@Embedded
-	private FamilyFinancialInfo familyFinancialInfo;
 	
-	@Embedded
-	private DocumentUpload documentUpload;
-	
+//	
+//	@Embedded
+//	private StudentBasicInfo basicInfo;
+//	
+//	@Embedded
+//	private PermanentAddress permanentAddress;
+//	
+//	@Embedded
+//	private CurrentAddress currentAddress;
+//	
+//	@Embedded
+//	private ScholarshipHistory scholarshipHistory;
+//	
+//	@Embedded
+//	private FamilyStatus familyStatus;
+//	
+//	@Embedded
+//	private FatherInfo fatherInfo;
+//	
+//	@Embedded
+//	private MotherInfo motherInfo;
+//	
+//	@Embedded
+//	private GuardianInfo guardianInfo;
+//	
+//	@Embedded
+//	private SiblingInfo siblingInfo;
+//	
+//	@Embedded
+//	private FamilyFinancialInfo familyFinancialInfo;
+//	
+//	@Embedded
+//	private DocumentUpload documentUpload;
+//	
 
 }

@@ -12,6 +12,12 @@ import lombok.NoArgsConstructor;
 public class FamilyStatus {
 
     // need selection for the choose one option
+	
+	
+	public enum familyStatus{
+		marriedAndLiveToghther,marriedAndLiveSeparate
+	}
+	
 	private boolean marriedAndLiveToghther;
 	private boolean marriedAndLiveSeparate;
 	private boolean divorcedOrSeparete;

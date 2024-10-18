@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +13,7 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class DocumentUpload {
 	
+	@Lob
 	private String scholarshipEssay;
 	
 	private byte[] housePhoto1;

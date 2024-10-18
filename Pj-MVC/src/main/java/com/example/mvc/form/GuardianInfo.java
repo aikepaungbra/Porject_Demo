@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class GuardianInfo {
 
-    //Gurdian doesn't have age
+    //Gurdian Info
 	public String gurdian_name;
     public String gurdian_occupation;
     public String gurdian_position;
@@ -21,6 +21,7 @@ public class GuardianInfo {
     public String gurdian_landOwned_rent_Rai;
     public int gurdian_phoneNumber;
     
+    //Gurdian Address
     private String gurdian_city_town_village;
     private String gurdian_houseNum;
     private String gurdian_moo;
@@ -30,6 +31,7 @@ public class GuardianInfo {
     private String gurdian_province;
     private int gurdian_postalCode;
     
+    //Gurdian Work Address
     private String gurdian_workPlace;
     private String gurdian_workPlaceNumber;
     private String gurdian_workMoo;
@@ -40,6 +42,7 @@ public class GuardianInfo {
     private int gurdian_workPostalCode;
     private int gurdian_workPhoneNumber;
     
+    //Gurdian RS
     private String gurdian_relationship;
     private int gurdian_monthlySupport;
 
