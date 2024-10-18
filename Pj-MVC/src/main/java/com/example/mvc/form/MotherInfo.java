@@ -12,13 +12,14 @@ import lombok.NoArgsConstructor;
 @Table(name = "motherInfo")
 public class MotherInfo {
 
+
 	@Embedded
-    private PersonalInfo motherInfo;
-	
+	private PersonalInfo motherInfo;
+
 	@Embedded
-    private Address motherAddress;
-	
+	private Address motherAddress;
+
 	@Embedded
-    private WorkAddress motherWorkAddress;
+	private WorkAddress motherWorkAddress;
 
 }
