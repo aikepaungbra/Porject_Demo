@@ -1,5 +1,6 @@
 package com.example.mvc.form;
 
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -8,12 +9,18 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@Entity
-@Table(name = "permanentAddress")
+@Embeddable
 public class PermanentAddress {
     
-	@Embedded
-    private Address permanentAddress;
+	
+    private String city_town_village;
+    private String houseNum;
+    private String moo;
+    private String road;
+    private String subDistrict;
+    private String district;
+    private String province;
+    private int postalCode;
    
 
 }

@@ -11,12 +11,12 @@ public class WorkAddress {
 
     private String workPlace;
     private String workPlaceNumber;
-    private String moo;
-    private String road;
-    private String subDistrict;
-    private String district;
-    private String province;
-    private int postalCode;
+    private String workMoo;
+    private String workRoad;
+    private String workSubDistrict;
+    private String workDistrict;
+    private String workProvince;
+    private int workPostalCode;
     private int workPhoneNumber;
     
 }

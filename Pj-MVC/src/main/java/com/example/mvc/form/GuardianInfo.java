@@ -1,5 +1,6 @@
 package com.example.mvc.form;
 
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -8,19 +9,36 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@Entity
-@Table(name = "guardianInfo")
+@Embeddable
 public class GuardianInfo {
 
     //Gurdian doesn't have age
-	@Embedded
-    private PersonalInfo guardianInfo;
+	public String name;
+    public String occupation;
+    public String position;
+    public int monthlyIncome;
+    public int yearlyIncome;
+    public String landOwned_rent_Rai;
+    public int phoneNumber;
     
-    @Embedded
-    private Address gurdianAddress;
+    private String city_town_village;
+    private String houseNum;
+    private String moo;
+    private String road;
+    private String subDistrict;
+    private String district;
+    private String province;
+    private int postalCode;
     
-    @Embedded
-    private WorkAddress gurdianWorkAddress;
+    private String workPlace;
+    private String workPlaceNumber;
+    private String workMoo;
+    private String workRoad;
+    private String workSubDistrict;
+    private String workDistrict;
+    private String workProvince;
+    private int workPostalCode;
+    private int workPhoneNumber;
     
     private String relationship;
     private int monthlySupport;
