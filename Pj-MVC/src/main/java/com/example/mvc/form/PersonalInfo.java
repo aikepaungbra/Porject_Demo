@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class PersonalInfo {
     
     public String name;
-    public int age;
+    public int StudentAge;
     public String occupation;
     public String position;
     public int monthlyIncome;

@@ -20,13 +20,10 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class StudentBasicInfo {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
 
 	private String studentName;
 	private LocalDate dateOfBirth;
-	private String age;
+	private int age;
 	private String studentId;
 	private String year;
 	private String major;

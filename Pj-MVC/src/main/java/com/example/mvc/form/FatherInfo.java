@@ -14,7 +14,7 @@ public class FatherInfo {
 
 
     public String name;
-    public int age;
+    public int fatherAge;
     public String occupation;
     public String position;
     public int monthlyIncome;

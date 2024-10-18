@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class MotherInfo {
 
 	public String name;
-    public int age;
+    public int motherAge;
     public String occupation;
     public String position;
     public int monthlyIncome;
