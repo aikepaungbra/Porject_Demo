@@ -13,11 +13,11 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class SiblingInfo {
 
-    private String siblingName;
-    private LocalDate birthday;
-    private int age;
-    private String occupation;
-    private String education;
-    private int monthlyIncome;
+    private String sibling_Name;
+    private LocalDate sibling_birthday;
+    private int sibling_age;
+    private String sibling_occupation;
+    private String sibling_education;
+    private int sibling_monthlyIncome;
 
 }

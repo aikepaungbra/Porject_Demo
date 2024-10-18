@@ -13,33 +13,33 @@ import lombok.NoArgsConstructor;
 public class FatherInfo {
 
 
-    public String name;
+    public String father_name;
     public int fatherAge;
-    public String occupation;
-    public String position;
-    public int monthlyIncome;
-    public int yearlyIncome;
-    public String landOwned_rent_Rai;
-    public int phoneNumber;
+    public String father_occupation;
+    public String father_position;
+    public int father_monthlyIncome;
+    public int father_yearlyIncome;
+    public String father_landOwned_rent_Rai;
+    public int father_phoneNumber;
 
-    private String city_town_village;
-    private String houseNum;
-    private String moo;
-    private String road;
-    private String subDistrict;
-    private String district;
-    private String province;
-    private int postalCode;
+    private String father_city_town_village;
+    private String father_houseNum;
+    private String father_moo;
+    private String father_road;
+    private String father_subDistrict;
+    private String father_district;
+    private String father_province;
+    private int father_postalCode;
     
-	private String workPlace;
-    private String workPlaceNumber;
-    private String workMoo;
-    private String workRoad;
-    private String workSubDistrict;
-    private String workDistrict;
-    private String workProvince;
-    private int workPostalCode;
-    private int workPhoneNumber;
+	private String father_workPlace;
+    private String father_workPlaceNumber;
+    private String father_workMoo;
+    private String father_workRoad;
+    private String father_workSubDistrict;
+    private String father_workDistrict;
+    private String father_workProvince;
+    private int father_workPostalCode;
+    private int father_workPhoneNumber;
 
 
 }

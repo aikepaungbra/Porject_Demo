@@ -13,14 +13,14 @@ import lombok.NoArgsConstructor;
 public class PermanentAddress {
     
 	
-    private String city_town_village;
-    private String houseNum;
-    private String moo;
-    private String road;
-    private String subDistrict;
-    private String district;
-    private String province;
-    private int postalCode;
+    private String permanent_city_town_village;
+    private String permanent_houseNum;
+    private String permanent_moo;
+    private String permanent_road;
+    private String permanent_subDistrict;
+    private String permanent_district;
+    private String permanent_province;
+    private int permanent_postalCode;
    
 
 }

@@ -28,6 +28,6 @@ public class DocumentUpload {
 	private byte[] nonParentalGuardianshipCertification;
 	
 	private String signature;
-	private LocalDate date;
+	private LocalDate scholarship_date;
 
 }

@@ -21,19 +21,19 @@ import lombok.NoArgsConstructor;
 public class StudentBasicInfo {
 
 
-	private String studentName;
-	private LocalDate dateOfBirth;
-	private int age;
-	private String studentId;
-	private String year;
-	private String major;
+	private String student_name;
+	private LocalDate student_dateOfBirth;
+	private int student_age;
+	private String student_id;
+	private String student_year;
+	private String student_major;
 	private String schoolOf;
-	private double gpaX;
-	private String phoneNumber;
-	private String email;
-	private String advisorName;
+	private double student_gpaX;
+	private String student_phoneNumber;
+	private String student_email;
+	private String student_advisorName;
 
-	private byte[] studentPhoto;
+	private byte[] student_photo;
 
 	
 

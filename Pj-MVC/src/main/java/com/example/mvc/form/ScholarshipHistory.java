@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class ScholarshipHistory {
 
     private boolean scholarBefore;
-    private String ScholarName;
+    private String scholarName;
     private int recieveYear;
     private int scholarAmount;
 

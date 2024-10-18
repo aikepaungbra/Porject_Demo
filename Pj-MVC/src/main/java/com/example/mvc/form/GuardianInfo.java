@@ -13,34 +13,34 @@ import lombok.NoArgsConstructor;
 public class GuardianInfo {
 
     //Gurdian doesn't have age
-	public String name;
-    public String occupation;
-    public String position;
-    public int monthlyIncome;
-    public int yearlyIncome;
-    public String landOwned_rent_Rai;
-    public int phoneNumber;
+	public String gurdian_name;
+    public String gurdian_occupation;
+    public String gurdian_position;
+    public int gurdian_monthlyIncome;
+    public int gurdian_yearlyIncome;
+    public String gurdian_landOwned_rent_Rai;
+    public int gurdian_phoneNumber;
     
-    private String city_town_village;
-    private String houseNum;
-    private String moo;
-    private String road;
-    private String subDistrict;
-    private String district;
-    private String province;
-    private int postalCode;
+    private String gurdian_city_town_village;
+    private String gurdian_houseNum;
+    private String gurdian_moo;
+    private String gurdian_road;
+    private String gurdian_subDistrict;
+    private String gurdian_district;
+    private String gurdian_province;
+    private int gurdian_postalCode;
     
-    private String workPlace;
-    private String workPlaceNumber;
-    private String workMoo;
-    private String workRoad;
-    private String workSubDistrict;
-    private String workDistrict;
-    private String workProvince;
-    private int workPostalCode;
-    private int workPhoneNumber;
+    private String gurdian_workPlace;
+    private String gurdian_workPlaceNumber;
+    private String gurdian_workMoo;
+    private String gurdian_workRoad;
+    private String gurdian_workSubDistrict;
+    private String gurdian_workDistrict;
+    private String gurdian_workProvince;
+    private int gurdian_workPostalCode;
+    private int gurdian_workPhoneNumber;
     
-    private String relationship;
-    private int monthlySupport;
+    private String gurdian_relationship;
+    private int gurdian_monthlySupport;
 
 }

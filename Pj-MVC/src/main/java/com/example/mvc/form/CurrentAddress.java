@@ -12,13 +12,13 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class CurrentAddress{
 
-	private String city_town_village;
-    private String houseNum;
-    private String moo;
-    private String road;
-    private String subDistrict;
-    private String district;
-    private String province;
-    private int postalCode;
+	private String current_city_town_village;
+    private String current_houseNum;
+    private String current_moo;
+    private String current_road;
+    private String current_subDistrict;
+    private String current_district;
+    private String current_province;
+    private int current_postalCode;
 
 }

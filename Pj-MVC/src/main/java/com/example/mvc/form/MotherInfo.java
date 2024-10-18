@@ -12,32 +12,32 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class MotherInfo {
 
-	public String name;
-    public int motherAge;
-    public String occupation;
-    public String position;
-    public int monthlyIncome;
-    public int yearlyIncome;
-    public String landOwned_rent_Rai;
-    public int phoneNumber;
+	public String mother_name;
+    public int mother_Age;
+    public String mother_occupation;
+    public String mother_position;
+    public int mother_monthlyIncome;
+    public int mother_yearlyIncome;
+    public String mother_landOwned_rent_Rai;
+    public int mother_phoneNumber;
 
-	private String city_town_village;
-    private String houseNum;
-    private String moo;
-    private String road;
-    private String subDistrict;
-    private String district;
-    private String province;
-    private int postalCode;
+	private String mother_city_town_village;
+    private String mother_houseNum;
+    private String mother_moo;
+    private String mother_road;
+    private String mother_subDistrict;
+    private String mother_district;
+    private String mother_province;
+    private int mother_postalCode;
 
-	private String workPlace;
-    private String workPlaceNumber;
-    private String workMoo;
-    private String workRoad;
-    private String workSubDistrict;
-    private String workDistrict;
-    private String workProvince;
-    private int workPostalCode;
-    private int workPhoneNumber;
+	private String mother_workPlace;
+    private String mother_workPlaceNumber;
+    private String mother_workMoo;
+    private String mother_workRoad;
+    private String mother_workSubDistrict;
+    private String mother_workDistrict;
+    private String mother_workProvince;
+    private int mother_workPostalCode;
+    private int mother_workPhoneNumber;
 
 }
