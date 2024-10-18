@@ -1,10 +1,12 @@
 package com.example.mvc.form;
 
+import jakarta.persistence.Embeddable;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
+@Embeddable
 public class WorkAddress {
 
     private String workPlace;
