@@ -23,7 +23,7 @@ public class StudentBasicInfo {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String student_id;
+	private Long student_id;
 	
 	private String student_name;
 	private LocalDate student_dateOfBirth;
