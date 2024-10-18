@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class PersonalInfo {
     
-    public String Name;
+    public String name;
     public int age;
     public String occupation;
     public String position;

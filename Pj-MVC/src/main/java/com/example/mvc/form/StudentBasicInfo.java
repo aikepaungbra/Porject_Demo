@@ -5,6 +5,7 @@ import java.util.List;
 
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,8 +17,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@Entity
-@Table(name = "studentBasicInfo")
+@Embeddable
 public class StudentBasicInfo {
 
 	@Id
@@ -31,7 +31,7 @@ public class StudentBasicInfo {
 	private String year;
 	private String major;
 	private String schoolOf;
-	private int gpaX;
+	private double gpaX;
 	private String phoneNumber;
 	private String email;
 	private String advisorName;
