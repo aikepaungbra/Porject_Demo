@@ -1,6 +1,7 @@
 package com.example.mvc.form;
 
-import jakarta.persistence.Embeddable;
+import com.example.mvc.form.usedEntity.StudentBasicInfo;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
