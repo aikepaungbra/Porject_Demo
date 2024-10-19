@@ -17,7 +17,8 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@Embeddable
+@Entity
+@Table(name = "student_Basic_Info")
 public class StudentBasicInfo {
 
 

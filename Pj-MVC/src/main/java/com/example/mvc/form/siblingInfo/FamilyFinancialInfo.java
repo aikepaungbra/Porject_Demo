@@ -21,7 +21,7 @@ public class FamilyFinancialInfo {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
+	private Long id;
 
     private int totalFamilyIncome;
     private int totalFamilyExpensive;
