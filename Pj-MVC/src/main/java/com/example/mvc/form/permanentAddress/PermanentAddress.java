@@ -1,4 +1,4 @@
-package com.example.mvc.form.usedEntity;
+package com.example.mvc.form.permanentAddress;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Embedded;

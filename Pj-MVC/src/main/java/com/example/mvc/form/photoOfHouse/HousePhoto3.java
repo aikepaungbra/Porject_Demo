@@ -1,6 +1,6 @@
-package com.example.mvc.form.usedEntity.DocumentUploadFolder;
+package com.example.mvc.form.photoOfHouse;
 
-import com.example.mvc.form.usedEntity.StudentBasicInfo;
+import com.example.mvc.form.studentBasicInfo.StudentBasicInfo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

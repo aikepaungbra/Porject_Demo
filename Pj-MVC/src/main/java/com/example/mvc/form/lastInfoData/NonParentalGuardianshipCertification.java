@@ -1,8 +1,6 @@
-package com.example.mvc.form.usedEntity.DocumentUploadFolder;
+package com.example.mvc.form.lastInfoData;
 
-import java.time.LocalDate;
-
-import com.example.mvc.form.usedEntity.StudentBasicInfo;
+import com.example.mvc.form.studentBasicInfo.StudentBasicInfo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,15 +13,14 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Signature")
-public class Signature{
+@Table(name = "NonParentalGuardianshipCertification")
+public class NonParentalGuardianshipCertification{
 
     @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-    private String signature;
-	private LocalDate scholarship_date;
+    private byte[] nonParentalGuardianshipCertification;
 
     @OneToOne
     @JoinColumn(name = "student_id",nullable = false)

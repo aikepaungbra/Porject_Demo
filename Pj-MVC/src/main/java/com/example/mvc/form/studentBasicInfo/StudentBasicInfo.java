@@ -1,4 +1,4 @@
-package com.example.mvc.form.usedEntity;
+package com.example.mvc.form.studentBasicInfo;
 
 import java.time.LocalDate;
 import java.util.List;

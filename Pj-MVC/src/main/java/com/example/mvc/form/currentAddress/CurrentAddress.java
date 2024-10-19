@@ -1,6 +1,7 @@
-package com.example.mvc.form.usedEntity;
+package com.example.mvc.form.currentAddress;
 
 import com.example.mvc.form.Address;
+import com.example.mvc.form.studentBasicInfo.StudentBasicInfo;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Embedded;

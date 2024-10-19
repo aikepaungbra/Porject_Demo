@@ -1,4 +1,4 @@
-package com.example.mvc.form.usedEntity;
+package com.example.mvc.form.siblingInfo;
 
 import java.time.LocalDate;
 

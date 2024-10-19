@@ -1,6 +1,6 @@
-package com.example.mvc.form.usedEntity.DocumentUploadFolder;
+package com.example.mvc.form.photoOfHouse;
 
-import com.example.mvc.form.usedEntity.StudentBasicInfo;
+import com.example.mvc.form.studentBasicInfo.StudentBasicInfo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,8 +13,8 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "HousePhoto_one")
-public class HousePhoto1 {
+@Table(name = "HousePhoto_four")
+public class HousePhoto4 {
 
     @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
