@@ -14,76 +14,75 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.mvc.form.ApplyScholarshipForm;
 import com.example.mvc.repository.ApplyScholarshipFormRepository;
 
 @RestController
 @RequestMapping("/api/scholarships")
 public class ApplyScholarshipFormController {
-
-	@Autowired
-	private ApplyScholarshipFormRepository repository;
-	
-	@PostMapping("/applications")
-	public ResponseEntity<ApplyScholarshipForm> createApplicationForm(@RequestBody ApplyScholarshipForm applyScholarshipForm){
-		
-		if(repository.existsById(applyScholarshipForm.getId())) {
-			
-			return new ResponseEntity<>(HttpStatus.CONFLICT);
-		
-		}
-		
-		repository.save(applyScholarshipForm);
-	
-		return new ResponseEntity<>(HttpStatus.CREATED);
-	}
-
-	@GetMapping("/applications")
-	public ResponseEntity<List<ApplyScholarshipForm>> getAllApplications() {
-		
-		List<ApplyScholarshipForm> applications = repository.findAll();
-
-		if (repository.findAll().isEmpty()) {
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-
-		return new ResponseEntity<>(applications, HttpStatus.OK);
-
-	}
-	
-
-	@GetMapping("/applications/{id}")
-	public ResponseEntity<ApplyScholarshipForm> getApplicationById(@PathVariable Long id) {
-		
-		Optional<ApplyScholarshipForm> result = repository.findById(id);
-		
-		
-		if(result.isEmpty()) {
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-		
-		return new ResponseEntity<>(result.get(),HttpStatus.OK);
-		
-	}
-	
-	@DeleteMapping("/applications/{id}")
-	public ResponseEntity<ApplyScholarshipForm> DeleteById(@PathVariable Long id) {
-		
-		
-		
-		
-		if(repository.findById(id).isEmpty()) {
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-		
-		repository.deleteById(id);
-		
-		return new ResponseEntity<>(HttpStatus.OK);
-		
-	}
-	
-	
-	
-	
+//
+//	@Autowired
+//	private ApplyScholarshipFormRepository repository;
+//	
+//	@PostMapping("/applications")
+//	public ResponseEntity<ApplyScholarshipForm> createApplicationForm(@RequestBody ApplyScholarshipForm applyScholarshipForm){
+//		
+//		if(repository.existsById(applyScholarshipForm.getId())) {
+//			
+//			return new ResponseEntity<>(HttpStatus.CONFLICT);
+//		
+//		}
+//		
+//		repository.save(applyScholarshipForm);
+//	
+//		return new ResponseEntity<>(HttpStatus.CREATED);
+//	}
+//
+//	@GetMapping("/applications")
+//	public ResponseEntity<List<ApplyScholarshipForm>> getAllApplications() {
+//		
+//		List<ApplyScholarshipForm> applications = repository.findAll();
+//
+//		if (repository.findAll().isEmpty()) {
+//			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//		}
+//
+//		return new ResponseEntity<>(applications, HttpStatus.OK);
+//
+//	}
+//	
+//
+//	@GetMapping("/applications/{id}")
+//	public ResponseEntity<ApplyScholarshipForm> getApplicationById(@PathVariable Long id) {
+//		
+//		Optional<ApplyScholarshipForm> result = repository.findById(id);
+//		
+//		
+//		if(result.isEmpty()) {
+//			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//		}
+//		
+//		return new ResponseEntity<>(result.get(),HttpStatus.OK);
+//		
+//	}
+//	
+//	@DeleteMapping("/applications/{id}")
+//	public ResponseEntity<ApplyScholarshipForm> DeleteById(@PathVariable Long id) {
+//		
+//		
+//		
+//		
+//		if(repository.findById(id).isEmpty()) {
+//			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//		}
+//		
+//		repository.deleteById(id);
+//		
+//		return new ResponseEntity<>(HttpStatus.OK);
+//		
+//	}
+//	
+//	
+//	
+//	
 
 }

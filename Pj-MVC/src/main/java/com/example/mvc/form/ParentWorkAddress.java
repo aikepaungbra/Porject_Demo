@@ -15,7 +15,7 @@ public class ParentWorkAddress {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
+	private Long id;
 	
 	private String work_place;
     private String num;

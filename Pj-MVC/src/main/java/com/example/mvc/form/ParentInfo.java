@@ -14,7 +14,7 @@ public class ParentInfo {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String id;
+	private Long id;
 	
 	private String name;
 	private int age;

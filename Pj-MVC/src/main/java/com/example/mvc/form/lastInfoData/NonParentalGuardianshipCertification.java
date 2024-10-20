@@ -10,10 +10,12 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @Entity
-@Table(name = "NonParentalGuardianshipCertification")
+@Table(name = "non_Parental_Guardianship_Certification")
 public class NonParentalGuardianshipCertification{
 
     @Id

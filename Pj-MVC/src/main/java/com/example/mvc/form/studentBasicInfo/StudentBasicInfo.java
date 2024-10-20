@@ -38,6 +38,8 @@ public class StudentBasicInfo {
 	private String student_advisorName;
 
 	private byte[] student_photo;
+	
+	
 
 	
 

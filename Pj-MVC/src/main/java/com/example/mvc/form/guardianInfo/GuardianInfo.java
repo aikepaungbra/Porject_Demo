@@ -1,8 +1,15 @@
 package com.example.mvc.form.guardianInfo;
 
+import com.example.mvc.form.studentBasicInfo.StudentBasicInfo;
+
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +19,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "guardian_info")
 public class GuardianInfo {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
     //Gurdian Info
 	public String gurdian_name;
@@ -23,6 +34,10 @@ public class GuardianInfo {
     public int gurdian_yearlyIncome;
     public String gurdian_landOwned_rent_Rai;
     public int gurdian_phoneNumber;
+    
+    @OneToOne
+    @JoinColumn(name = "student_id", nullable = false) // FK to StudentBasicInfo
+    private StudentBasicInfo basicInfo;
 //    
 //    //Gurdian Address
 //    private String gurdian_city_town_village;

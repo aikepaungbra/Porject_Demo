@@ -11,10 +11,12 @@ import jakarta.persistence.Lob;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @Entity
-@Table(name = "Scholarship_essay")
+@Table(name = "scholarship_essay")
 public class ScholarshipEssay {
 
     @Id

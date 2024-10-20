@@ -10,11 +10,13 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @Entity
-@Table(name = "HousePhoto_two")
-public class HousePhoto2 {
+@Table(name = "housePhoto_two")
+public class HousePhotoTwo {
 
     @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
